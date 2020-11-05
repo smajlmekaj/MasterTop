@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <title>Top Lane Master</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav id="navbar">
+      <h1>TLM</h1>
+      <div id="searchbar">
+        <input
+          autofocus
+          placeholder="search"
+          class="search"
+          autocomplete="off"
+          name="search"
+          type="text"
+        />
+      </div>
+      <ul id="nav-ul">
+        <li class="nav-li"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-li">
+          <a href="index.html#guides-home" class="nav-link">Guides</a>
+        </li>
+        <li class="nav-li">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Contact Area -->
+
+    <form action="POST" data-netlify="true">
+      <div class="fields">
+        <div class="field-half">
+          <input type="text" name="name" id="name" placeholder="Name" />
+        </div>
+        <div class="field-half">
+          <input type="email" name="email" id="email" placeholder="Email" />
+        </div>
+        <div class="field">
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Message"
+            rows="10"
+          ></textarea>
+        </div>
+        <div class="field">
+          <input
+            type="file"
+            name="my file"
+            id="my-file"
+            placeholder="Upload File"
+            rows="10"
+          />
+        </div>
+        <div class="field">
+          <div data-netlify-recaptcha="true"></div>
+        </div>
+        <ul class="actions">
+          <li>
+            <input type="submit" value="Send Message" class="button-primary" />
+          </li>
+        </ul>
+      </div>
+    </form>
+
+    <!-- Footer -->
+    <footer>
+      <h3 id="h3-footer">Made In Kosova</h3>
+      <h3 id="copyright">Top Lane Master, CopyRight &copy; 2020</h3>
+      <h3 id="info">
+        lightningrange@gmail.com <br />
+        Tele:+5555555 <br />
+        Location:Kosova-Gjakova
+      </h3>
+    </footer>
+  </body>
+</html>

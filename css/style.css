@@ -1,0 +1,270 @@
+:root {
+  --first--color: #ff4d4d;
+  --second--color: #ffff7d;
+  --third--color: #7092be;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../foto/nr3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5rem;
+  color: #dcdcdc;
+  /* background-color: var(--first--color); */
+}
+
+nav,
+#navbar {
+  /* background-color: var(--first--color); */
+  overflow: none;
+  display: flex;
+  /* border-color: var(--third--color);
+  border-bottom-style: solid; */
+}
+
+h1 {
+  padding: 20px 100px;
+  margin: 5px 50px 4px 100px;
+  font-size: 42px;
+  background-color: var(--third--color);
+  border-bottom-color: white;
+  border-radius: 100px 100px 100px 50px;
+  border-style: solid;
+}
+
+#searchbar {
+  padding: 10px 10px;
+  align-items: center;
+  border-style: none;
+  margin-top: 6px;
+  margin-right: 50px;
+  margin-left: 400px;
+}
+
+input {
+  border-style: none;
+  border-radius: 20px;
+
+  padding: 10px 20px;
+  font-size: 18px;
+  /* background-color: var(--third--color); */
+}
+
+input:focus {
+  color: black;
+  background-color: var(--second--color);
+}
+
+#nav-ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav-li {
+  margin-right: 40px;
+  list-style: none;
+}
+
+.nav-link {
+  border-style: border-box;
+  border-radius: 20px;
+
+  padding: 10px 20px;
+  /* background-color: var(--third--color); */
+  text-decoration: none;
+  color: #dcdcdc;
+}
+
+.nav-link:hover {
+  color: black;
+  background-color: var(--second--color);
+}
+
+.section-links {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+.section-links:hover {
+  color: black;
+}
+
+#p-home {
+  padding: 40px 10px;
+  width: auto;
+  height: auto;
+  border-style: solid;
+  border-color: white;
+  /* background-color: var(--third--color); */
+  font-style: bold;
+  color: #dcdcdc;
+  text-align: center;
+  font-size: 30px;
+}
+
+#section1 ul li {
+  font-style: oblique;
+  color: black;
+  list-style: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 20px;
+  background: white;
+}
+
+#section1 ul li div {
+  border-radius: 100%;
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 4rem;
+  background: var(--third--color);
+  transition: all 0.5 ease-in-out;
+}
+
+#section1 ul li:nth-child(odd) div {
+  left: 40px;
+}
+
+#section1 ul li:nth-child(even) div {
+  left: -434px;
+}
+
+#section1 ul li:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  background: var(--third--color);
+  transform: translateX(-50%);
+  border-radius: 50%;
+  transition: background 0.5s ease-in-out;
+}
+
+footer {
+  background-color: black;
+  margin-top: 40px;
+  display: flex;
+}
+
+#h3-footer {
+  color: white;
+  border-style: solid;
+  border-color: white;
+  background: var(--third--color);
+  padding: 10px 20px;
+  margin-left: 30px;
+  margin-right: 400px;
+}
+
+#copyright {
+  border-style: solid;
+  border-color: white;
+  background: var(--third--color);
+  color: white;
+  padding: 10px 20px;
+}
+
+#info {
+  line-height: 1.5rem;
+  border-style: solid;
+  border-color: white;
+  background: var(--third--color);
+  color: white;
+  margin-left: 140px;
+}
+
+/* Nav bar media query */
+
+@media (max-width: 1300px) {
+  nav,
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #searchbar {
+    margin-left: 100px;
+  }
+
+  #nav-ul {
+    margin: 20px 0 20px 95px;
+  }
+}
+
+@media (max-width: 900px) {
+  nav,
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #searchbar {
+    margin-left: 100px;
+  }
+
+  #nav-ul {
+    margin: 20px 0 20px 95px;
+  }
+}
+
+/* Section1 media query */
+
+@media (max-width: 900px) {
+  #section1 ul li div {
+    width: 250px;
+  }
+  #section1 ul li:nth-child(even) div {
+    left: -284px;
+  }
+  img {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 600px) {
+  #section1 ul li {
+    margin-left: 20px;
+  }
+
+  #section1 ul li div {
+    width: calc(100vw - 80px);
+  }
+
+  #section1 ul li:nth-child(even) div {
+    left: 40px;
+  }
+}
+
+/* FOOTER MEDIA QUERY */
+
+@media (max-width: 900px) {
+  #h3-footer {
+    margin: 0;
+  }
+
+  #copyright {
+    margin: 0;
+  }
+
+  #info {
+    margin: 0;
+  }
+
+  footer {
+    margin-top: 100px;
+  }
+}
